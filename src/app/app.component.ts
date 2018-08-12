@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Student } from './student/student.model';
 
 @Component({
   selector: 'jad-root',
@@ -7,7 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'jedi-academy';
-  luke = {name: 'Luke', isJedi: true, temple: 'Coruscant' };
-  hanSolo = {name: 'Han Solo', isJedi: false, temple: 'Coruscant' };
-  leia = {name: 'Leia', isJedi: false, temple: 'Coruscant' };
+  students: Student[] = [
+    {name: 'Luke', isJedi: true, temple: 'Coruscant' },
+    {name: 'Han Solo', isJedi: false, temple: 'Coruscant' },
+    {name: 'Leia', isJedi: false, temple: 'Coruscant' }
+  // tslint:disable-next-line:semicolon
+  ]
 }
