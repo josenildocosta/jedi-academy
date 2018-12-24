@@ -15,6 +15,7 @@ export class StudentComponent implements OnInit {
   }
 
   clicked(): void {
+    for(;;){}
     console.log(`Student: ${this.student.name}`);
   }
 
