@@ -14,8 +14,9 @@ export class StudentComponent implements OnInit {
   ngOnInit() {
   }
 
-  clicked(): void {
-    for(;;){}
+  clicked(): void {   
+    let i = 0;
+    i = i++; // Noncompliant; i is still zero
     console.log(`Student: ${this.student.name}`);
   }
 
